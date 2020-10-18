@@ -3,10 +3,17 @@
 window.onload = () => {
   console.log("Hey student, welcome to your console!")
 
-  // We'll add an event listener to the submit button so we can prevent the window from reloading when we click it.
+  // We'll add an event listener to the submit button so we can prevent the window from 
+  //reloading when we click it.
+
   const submitButton = document.getElementById("submit-button").addEventListener("click", event => {
     event.preventDefault(),
-    // this next line calls the sayHi function & passes it the value of the name input on the form from the target value of the event that's called when the form is submitted.
+
+    // this next line calls the sayHi function & passes it the value of the name input on the
+    // form from the target value of the event that's called when the form is submitted.
+
+    //note from Alex: I have no idea what I just read.
+
     sayHi(event.target.form.name.value)
   })
 }
@@ -17,6 +24,10 @@ window.onload = () => {
 // Can you make the text "hello" log to the console?
 const sayHello = () => {
   return "Hello!"
+}
+
+onclick = () => {
+  console.log("hello!")
 }
 
 
